@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import Container from '../components/Container/Container';
 import ButtonHome from '../components/ButtonHome/ButtonHome';
 import './Tateti.css';
 
@@ -18,7 +18,7 @@ const Tateti: React.FC = () => {
             <IonTitle size="large">Tateti</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tateti page" />
+        <Container name="Jugar Tateti" />
       </IonContent>
     </IonPage>
   );

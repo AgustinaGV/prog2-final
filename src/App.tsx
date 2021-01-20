@@ -10,12 +10,13 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle, home, homeOutline, homeSharp } from 'ionicons/icons';
+import { ellipse, square, triangle, home, homeOutline, homeSharp, pencil, pencilOutline, pencilSharp } from 'ionicons/icons';
 import Home from './pages/Home';
 import Memotest from './pages/Memotest';
 import Tateti from './pages/Tateti';
 import SopaDeLetras from './pages/SopaDeLetras';
 import Configuracion from './pages/Configuracion';
+import ConfiguracionPerfil from './pages/ConfiguracionPerfil';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -47,6 +48,7 @@ const App: React.FC = () => (
           <Route path="/tateti" component={Tateti} exact={true} />
           <Route path="/sopadeletras" component={SopaDeLetras} />
           <Route path="/configuracion" component={Configuracion} />
+          <Route path="/configuracionperfil" component={ConfiguracionPerfil} />
           <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

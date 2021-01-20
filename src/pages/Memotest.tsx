@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import Container from '../components/Container/Container';
 import ButtonHome from '../components/ButtonHome/ButtonHome';
 import './Memotest.css';
 
@@ -18,7 +18,7 @@ const Memotest: React.FC = () => {
             <IonTitle size="large">Memotest</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Memotest page" />
+        <Container name="Jugar Memotest" />
       </IonContent>
     </IonPage>
   );
